@@ -1,15 +1,86 @@
 <html>
 
 <head>
+    <script src="https://juxinglong.github.io/static/iframe-resizer/iframeResizer.contentWindow.min.js"></script>
     <title>
-        March 04
+        March 04 MIS 3033
     </title>
+    <link rel="icon" href="head1.png"/>
+
+
+    <style>
+        .style1 
+        {
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+            color: red;
+            border-style: solid;
+            border-color: hotpink;
+            border-width: 2px;
+            border-radius: 30%;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-sizing: content-box;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+
+        #div10 
+        {
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+            color: red;
+            border-style: solid;
+            border-color: hotpink;
+            border-width: 2px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-sizing: content-box;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+
 </head>
 
 <body style="margin:50px;">
-    <div style="width:300px;height:400px;background-color:lightblue;">
+
+    <div class="style1">div1</div>
+    <div class="style1">div2</div>
+    <div class="style1" style="position:relative;left:20px;top:-50px"> div3</div>
+
+    <div id="div10"
+         style="">
+        div2
+    </div>
+
+    <div id="div2"
+         style="background-color: pink; width: 200px; height: 200px; color: red; border-style: solid; border-color: hotpink; border-width: 2px; border-radius:10px; margin-bottom:20px;
+     padding:20px;box-sizing:border-box;">
+        div2
+    </div>
+
+    <img src="head2.png" style="width: 200px; border-radius:50%" />
+
+    <div id="div2"
+         style="background-color: pink; width: 200px; height: 200px; color: red; border-style: solid; border-color: hotpink; border-width: 2px; border-radius:50%; margin-bottom:20px;
+      box-sizing:content-box;">
+        div2
+    </div>
+
+    <div id="div2"
+         style="background-color: pink; width: 200px; height: 200px; color: red; border-style: solid; border-color: hotpink; border-width: 2px; border-radius:5px; margin-bottom:20px">
+        div2
+    </div>
+
+    <div style="width:300px;height:400px;background-color:lightblue;border-style:solid;border-color:dodgerblue;border-width:2px; border-radius: 5px">
         div1
     </div>
+
     <img style="width:200px;" src="a.svg" />
     <br />
     <img src="b.svg" style="height:300px;" />
