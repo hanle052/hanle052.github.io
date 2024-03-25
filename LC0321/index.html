@@ -49,8 +49,37 @@
         }
     </style>
 
+    <link rel="stylesheet" href="site.css" />
 </head>
 <body>
+    <div id="d3"></div>
+    <br />
+
+    <button id="b3" class="btn btn-danger">
+        Load Excuse
+    </button>
+
+    <script>
+        "use strict";
+        let b3 = document.querySelector("#b3");
+        b3.addEventListener("click", loadExcuse);
+        let R = null;
+        let url = "https://excuser-three.vercel.app/v1/excuse/college/";
+        //async function
+        //sync
+        async function loadExcuse()
+        {
+            let r = await fetch(url); //we put await to make sure it waits for the data to finish loading before the program runs the next line
+            let rj = await r.json();
+            let d3 = document.querySelector("#d3");
+            d3.innerHTML = rj[0].excuse;
+            R = rj;
+            console.log(rj);
+        }
+        loadExcuse();
+
+    </script>
+    <div class="div1"></div>
     <div id="d1">
 
     </div>
@@ -62,8 +91,7 @@
         "use strict";
         var T;
         let b1 = document.querySelector("#b1")
-        b1.addEventListener("click", async () =>
-        { //start func
+        b1.addEventListener("click", async () => { //start func
             // fetch(): helps load data
             let fd = new FormData();
 
@@ -84,16 +112,16 @@
             console.log(rj);
 
             let d1 = document.querySelector("#d1");
-            d1.innerHTML = `<h1> Fact is: </h1> 
-                            <br/>
-                            <h3>${rj.fact} </h3>
-                            <br/>
-                            <h1> Length: </h1> <br/>
-                            <h3>${rj.length}</h3>
-                            `;
+            d1.innerHTML = `<h1> Fact is: </h1>
+                                    <br/>
+                                    <h3>${rj.fact} </h3>
+                                    <br/>
+                                    <h1> Length: </h1> <br/>
+                                    <h3>${rj.length}</h3>
+                                    `;
 
             // end func
-        }) 
+        })
     </script>
 </body>
 
