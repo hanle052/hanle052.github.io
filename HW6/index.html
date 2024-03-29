@@ -1,102 +1,85 @@
 <html>
 <head>
     <title>
-        Homework 6 MIS 3033
+        MIS 3033 HW#6
     </title>
+
     <style>
-        #maindiv
+        #body
         {
             width:1600px;
-            background-color:white;
-            margin-left:auto;
-            margin-right:auto;
         }
         #header 
         {
-            
-            display:flex;
+            display: flex;
             flex-direction: row;
         }
-        #middle 
+        #middle
         {
             display:flex;
             flex-direction:row;
         }
-        #bottom
+        #lower 
         {
-            display:flex;
-            flex-direction:row;
+            display: flex;
+            flex-direction: row;
         }
         #footer 
         {
             background-color: gray;
-            display:flex;
-            flex-direction:row;
+            display: flex;
+            flex-direction: row;
         }
     </style>
 </head>
 <body>
-    <div id="maindiv">
+    <div id="body">
+
+
         <div id="header">
-            <div id="ouPic">
+            <div id="misPNG">
                 <img src="MIS.png" style="width:800px;"/>
             </div>
-            <div id="ouMIS" style="margin-top:15px;justify-content:center;">
-                <a href="one.ou.edu" style="color:blue;font-size:50px;">
-                OU MIS
+            <div id="ouMIS" style="font-size:40px; margin-top:20px; margin-left:10px;">
+                <a href="one.ou.edu">
+                    OU MIS
                 </a>
             </div>
         </div>
+
+
         <div id="middle">
-            <div id="recentNews" style="width:400px; margin-top:auto; margin-bottom:auto;">
-                <span style="color:darkred">
+            <div id="recentNews" style="margin-top:auto;margin-bottom:auto; margin-right:5px; margin-left:5px; width:400px;">
+                <span style="color:darkred;">
                     RECENT NEWS
                 </span>
-                <br />
-                <ul style="color:blue">
-                    <li>
-                        The graduate program was ranked, once again, in the top 25 Business Analytics
-                        programs in the nation by TFE times
-                    </li>
-                    <li>
-                        The Center for MIS Studies Spring 2022 retreat will be held on April 7th, 2022.
-                    </li>
-                    <li>
-                        MIS Division’s undergraduate degree earned the No 1 spot in the Top 15 Bachelor’s
-                        Degrees in Management Information Systems in 2021 by Best Value Schools.
-                    </li>
+                <ul style="color:blue;">
+                    <li>The graduate program was ranked, once again, in the top 25 Business Analytics programs in the nation by TFE times</li>
+                    <li>The Center for MIS Studies Spring 2022 retreat will be held on April 7th, 2022.</li>
+                    <li>MIS Division’s undergraduate degree earned the No 1 spot in the Top 15 Bachelor’s Degrees in Management Information Systems in 2021 by Best Value Schools.</li>
                 </ul>
             </div>
-            <div id="priceIMG">
+            <div id="priceJPG">
                 <img src="price.jpg" style="width:400px;"/>
             </div>
-            <div id="middleText" style="width:800px;margin-left:5px;">
-                <span style="color:darkred">
+            <div style="width: 800px; margin-left: 10px; margin-top:auto; margin-bottom:auto;">
+                <span style="color:darkred;">
                     What is Management Information Systems?
                 </span>
-                <br />
                 <span>
-                    Management Information Systems (MIS) is the application of information technology to meet
-                    organizational and managerial requirements that can result in business value. Hence, MIS
-                    students are trained to use computer technology to help businesses get the right information
-                    to the right people at the right time.
-                    In the undergraduate program, students learn how to collect, manipulate, transform, and present
-                    data to support organizational needs, including presentation on company websites. They also
-                    learn about cybersecurity and how to protect organizational data.
+                    Management Information Systems (MIS) is the application of information technology to meet organizational and managerial requirements that can result in business value. Hence, MIS students are trained to use computer technology to help businesses get the right information to the right people at the right time. In the undergraduate program, students learn how to collect, manipulate, transform, and present data to support organizational needs, including presentation on company websites. They also learn about cybersecurity and how to protect organizational data.
                     <br />
-                    The Business Analytics graduate program helps students learn to analyze huge volumes and a 
-                    variety of data, including those available through social media, through new tools and methods, 
-                    such as visualization and machine learning, in order to generate business insights. In general,
-                    be it the undergraduate or graduate program, MIS students are trained to become business detectives 
-                    with good analytical, business, communication, and problem-solving skills in a computer-based environment.
+                    The Business Analytics graduate program helps students learn to analyze huge volumes and a variety of data, including those available through social media, through new tools and methods, such as visualization and machine learning, in order to generate business insights. In general, be it the undergraduate or graduate program, MIS students are trained to become business detectives with good analytical, business, communication, and problem-solving skills in a computer-based environment.
                 </span>
             </div>
         </div>
-        <div id="bottom">
-            <div id="first" style="width:400px;"></div>
-            <div id="second" style="width:400px;">
-                <span style="color:darkred;">
-                    What kind of career should I pursue?
+
+
+        <div id="lower">
+            <div id="empty" style="width:410px;"></div>
+            <div id="career" style="width:400px; margin-top:10px;">
+                <span style="color:darkred; font:bold;">
+                    What kind of career can I pursue?
                 </span>
                 <ol>
                     <li>
@@ -122,14 +105,12 @@
                     </li>
                 </ol>
             </div>
-            <div id="third">
-                <span>
-                    What have our OU graduates done with their 
-                    Management Information Systems degree?
+            <div style="margin-top:5px; width:800px;margin-left:10px;">
+                <span style="color:darkred;">
+                    What have our OU graduates done with their Management Information Systems degree?
                 </span>
                 <ul>
-
-                    <li >
+                    <li>
                         <span style="border-style:solid;border-color:darkred;">
                             Analyst/Programmer
                         </span>
@@ -153,7 +134,7 @@
                         Web Developer
                     </li>
                     <li>
-                        <span style="border-style:dashed;border-color:darkred;background-color:lightgrey;">
+                        <span style="border-style:dashed;border-color:darkred;background-color:lightgray;">
                             Data Scientists
                         </span>
                     </li>
@@ -162,20 +143,23 @@
                     </li>
                 </ul>
             </div>
-
         </div>
+
+
         <div id="footer">
             <div>
                 <img src="OU.png" style="width:50px;"/>
             </div>
-            <div id="address" style="margin-left:5px;">
-                Management Information Systems
-                <br />
-                307 W. Brooks, Adams Hall, Room 3230
-                <br />
-                Norman, Oklahoma 73019
-                <br />
-                (405) 325-5721
+            <div style="margin-left: 10px">
+                <span>
+                    Management Information Systems
+                    <br />
+                    307 W. Brooks, Adams Hall, Room 3230
+                    <br />
+                    Norman, Oklahoma 73019
+                    <br />
+                    (405) 325-5721
+                </span>
             </div>
         </div>
     </div>
