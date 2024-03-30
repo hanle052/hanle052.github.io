@@ -1,79 +1,102 @@
 <html>
 <head>
-    <title>MIS 3033 HW7 Han Le</title>
+    <title>
+        MIS 3033 HW7
+    </title>
     <style>
-        #maindiv
+        #body 
         {
-            background-color: palevioletred;
+            display: flex;
+            flex-direction: column;
             width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
+            margin-left:auto;
+            margin-right:auto;
         }
-        #topdiv
+        #top 
         {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items:center;
             background-color: antiquewhite;
-            height:50px;
-            display:flex;
-            flex-direction:row;
-            justify-content:end;
-            align-items:center
+            height: 50px;
         }
-        #middlediv
+        #middle
         {
             background-color:aliceblue;
             display:flex;
             flex-direction:row;
+
         }
-        #bottomdiv
+        #order
+        {
+            width:400px;
+            height:300px;
+            margin-top:5px;
+        }
+        #totalcost 
+        {
+            width: 300px;
+            background-color: cornflowerblue;
+            height: 305px;
+        }
+        #bottom 
         {
             background-color: #073c76;
-            display:flex;
-            flex-direction:row;
-            justify-content:center;
-            align-items:center;
-
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
-
 <body>
-    <div id="maindiv">
-        
-        <div id="topdiv">
-            <div style="margin-right:5px">
-            Hi, Han Le
+    <div id="body">
+        <div id="top">
+            <div style="height:50px;margin-right:5px; align-content:center;">
+                Hi, Sasuke Uchiha,
             </div>
-            <div style="margin-right:5px">
-                <img src="head2.png" style="height:40px; border-radius:50%"/>
+            <div>
+                <img src="head1.png" style="height: 40px; border-radius: 50%; margin-right:5px;"/>
             </div>
-            <div style="margin-right:5px">
-            <button>Logout</button>
-            </div>            
+            <div>
+                <button style="margin-right:5px;">
+                    Logout
+                </button>
+            </div>
         </div>
 
 
-        <div id="middlediv">
-            <div style="width:300px;height:300px;">
-                <img src="book.jpg" style="width:200px;" />
+        <div id="middle">
+            <div id="book" style="width:300px;height:300px;">
+                <img src="book.jpg" style="width:200px;"/>
                 <br />
-                <span style="font-weight:bold">C# 10 and .NET 6</span>
+                <span style="font-weight:bold">
+                    C#10 and .Net 6
+                </span>
             </div>
-            <div style="width:400px; height:300px;">
-                <span style="font-weight:bold;">$44.99</span> <br />
-                <label>Qty: </label>
+            <div id="order">
+                <span style="font-weight:bold;">
+                    $44.99
+                </span>
+                <br />
+                <label>Qty:</label>
                 <input type="text"/>
                 <br />
-                <button>Add</button>
+                <button>
+                    Add
+                </button>
             </div>
-            <div style="width:300px;height:300px; background-color:cornflowerblue;">
-            <span style="font-weight:bold">Totalcost: $89.98</span>
+            <div id="totalcost">
+                <span style="font-weight:bold;">
+                    Total Cost: $89.98
+                </span>
             </div>
         </div>
 
-
-        <div id="bottomdiv" style="width:1000px;height:50px;line-height:50px;">
-            <span style="color: white;">
-                Developed by Han Le for MIS3033 Homework
+        <div id="bottom" style="width:1000px;height: 50px; line-height: 50px;">
+            <span style="color:white;">
+                Developed by Sasuke for MIS3033 Homework
             </span>
         </div>
     </div>
