@@ -1,47 +1,53 @@
 <html>
 <head>
     <title>MIS 3033 HW8</title>
-    <script src="https://juxinglong.github.io/static/iframe-resizer/iframeResizer.contentWindow.min.js"></script>
-
     <style>
-        #body 
+        #body
         {
+            display:flex;
+            flex-direction:column;
             width:1200px;
             margin-left:auto;
             margin-right:auto;
         }
         #header
         {
+            color:dodgerblue;
             font-size:20pt;
             font-weight:bold;
+            
         }
-        #content1
+        #middle
         {
             display:flex;
             flex-direction:row;
             
+            
         }
-        #leftdiv
+        #Ldiv 
         {
-            width:400px;
-            display:flex;
+            display: flex;
             flex-direction: column;
-            align-items:center;
+            width: 400px;
+            
             justify-content:center;
+            align-items:center;
+
         }
-        #rightdiv 
+        #profilepic
         {
-            width: 800px;
+            
         }
-        #up
+        #name 
         {
+            text-align:center;   
         }
-        #down
+        #downDiv
         {
             display:flex;
             flex-direction:row;
         }
-        #content2
+        #recentNews
         {
             background-color:#ededed;
         }
@@ -49,72 +55,76 @@
         {
             background-color:#faf7f7;
             color:dimgray;
-            display:flex;
-            flex-direction:row;
-            justify-content:center;
+            text-align:center;
         }
-        .title1 
+        .Bold
         {
-            font-weight: bold;
-            font-size: 30px;
+            font-size:30px;
+            font-weight:bold;
         }
     </style>
 </head>
 <body>
     <div id="body">
         <div id="header">
-            <span>
-                Han Le's Website
-            </span>
+            Xinglong Ju's Website
         </div>
-        <div id="content1">
-            <div id="leftdiv">
-                <div id="head2.png">
-                    <img src="static/head2.png" style="width:200px;border-radius:50%"/>
+        <div id="middle">
+            <div id="Ldiv">
+                <div id="profilepic">
+                    <img src="static/head2.png" style="border-radius:50%; width:200px;" />
                 </div>
-                <div style="font-size:30px;">
-                    Han Le
+                <div id="name">
+                    <span style="font-size:30px;">
+                        Xinglong Ju
+                    </span>
+                    <br />
+                    <span style="color:dimgray; font-size:20px;">
+                        Student in Management Information Systems
+                        <br />
+                        The University of Oklahoma
+                    </span>
                 </div>
-                <div style="font-size:20px;color:dimgray">
-                    Student in Management Information Systems
-                </div>
-                <div style="font-size:20px;color:dimgray">
-                    The University of Oklahoma
-                </div>
-                <div">
-                    <a href="mailto:xinglong.ju@ou.edu" target="_blank">
+                <div id="socials">
+                    <a href="https://www.google.mail.com" target="_blank">
                         <img src="static/email.png" style="width:30px;" />
                     </a>
-                    <a href="https://www.linkedin.com/" target="_blank">
+                    <a href="https://www.linkedin.com" target="_blank">
                         <img src="static/linkedin.png" style="width:30px;" />
                     </a>
-                    <a href="https://twitter.com/" target="_blank">
-                        <img src="static/twitter.png" style="width:30px;" />
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="static/instagram.png"style="width:30px;"/>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="static/instagram.png" style="width:30px;" />
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="static/twitter.png" style="width:30px;"/>
                     </a>
-
+                </div>
             </div>
-            <div id="rightdiv">
-                <div id="up">
-                    <span class="title1">
+            <div id="Rdiv">
+                <div id="upDiv">
+                    <span class="Bold">
                         Biography
                     </span>
-                    <br /><br />
-                    I am a Senior student in Management Information Systems at The University of Oklahoma. I am on the 2022/2023 job market.
-                    <br /><br />
-                    My study focuses on data analytics and I am good at programming (Console, Desktop and Web Applications) and databases management.
-                    <br /><br />
-                    For more information, please refer to my 
-                    <a href="static/CV.pdf" target="_blank">
-                        CV.
-                    </a>
-                    <br /><br />
+                    <br />
+                    <br />
+                    <span>
+                        I am a Senior student in Management Information Systems at The University of Oklahoma. I am on the 2022/2023 job market.
+                        <br />
+                        <br />
+                        My study focuses on data analytics and I am good at programming (Console, Desktop and Web Applications) and databases management.
+                        <br />
+                        <br />
+                        For more information, please refer to my 
+                        <a href="static/CV.pdf" target="_blank">
+                            CV.
+                        </a>
+                        <br />
+                        <br />
+                    </span>
                 </div>
-                <div id="down">
-                    <div id="interest">
-                        <span class="title1">
+                <div id="downDiv">
+                    <div id="interests">
+                        <span class="Bold">
                             Interests
                         </span>
                         <ol>
@@ -125,19 +135,18 @@
                                 Business Analyst
                             </li>
                             <li>
-                                Database Administration
+                                Business Analyst
                             </li>
                             <li>
-                                Web Developer
+                                Business Analyst
                             </li>
                             <li>
                                 Data Scientists
                             </li>
                         </ol>
-                        
                     </div>
                     <div id="education">
-                        <span class="title1">
+                        <span class="Bold">
                             Education
                         </span>
                         <ul>
@@ -152,27 +161,25 @@
                                 The University of Oklahoma
                             </li>
                         </ul>
-                        
                     </div>
                 </div>
             </div>
-
         </div>
-        <div id="content2">
-            <span class="title1">
+        <div id="recentNews">
+            <span class="Bold">
                 Recent News
             </span>
             <ul>
-                <li>Learning C# Web Application Design</li>
                 <li>
-                    Learning C# WPF
-                    <br />
-                    <br />
+                    Learning C# Web Application Design
+                </li>
+                <li>
+                    Learning C# EF
                 </li>
             </ul>
         </div>
         <div id="footer">
-            Designed and Published by Han Le
+            Designed and Published by Xinglong Ju
         </div>
     </div>
 </body>
