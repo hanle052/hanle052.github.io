@@ -4,8 +4,6 @@
     <style>
         #body
         {
-            display:flex;
-            flex-direction:column;
             width:1200px;
             margin-left:auto;
             margin-right:auto;
@@ -13,43 +11,43 @@
         #header
         {
             color:dodgerblue;
-            font-size:20pt;
+            font-size:20px;
             font-weight:bold;
-            
         }
-        #middle
+        #main
         {
             display:flex;
             flex-direction:row;
-            
-            
+            width:1200px;
+            margin-top:auto;
         }
-        #Ldiv 
+        #profile 
         {
             display: flex;
             flex-direction: column;
             width: 400px;
-            
-            justify-content:center;
-            align-items:center;
-
+            justify-content: center;
+            align-items: center;
+            margin-top:auto;
+            margin-bottom:auto;
         }
-        #profilepic
+        #name
         {
-            
+            text-align:center;
         }
-        #name 
+        #Rdiv
         {
-            text-align:center;   
+            display:flex;
+            flex-direction:column;
         }
-        #downDiv
+        #bDiv
         {
             display:flex;
             flex-direction:row;
         }
         #recentNews
         {
-            background-color:#ededed;
+            background-color:#ededed
         }
         #footer
         {
@@ -57,10 +55,10 @@
             color:dimgray;
             text-align:center;
         }
-        .Bold
+        .Title
         {
-            font-size:30px;
             font-weight:bold;
+            font-size:30px;
         }
     </style>
 </head>
@@ -69,62 +67,63 @@
         <div id="header">
             Xinglong Ju's Website
         </div>
-        <div id="middle">
-            <div id="Ldiv">
-                <div id="profilepic">
-                    <img src="static/head2.png" style="border-radius:50%; width:200px;" />
+        <div id="main">
+            <div id="profile">
+                <div id="pic">
+                    <img src="static/head2.png" style="border-radius: 50%; width: 200px;"/>
                 </div>
                 <div id="name">
                     <span style="font-size:30px;">
                         Xinglong Ju
                     </span>
                     <br />
-                    <span style="color:dimgray; font-size:20px;">
+                    <span style="font-size:20px; color:dimgray;">
                         Student in Management Information Systems
                         <br />
-                        The University of Oklahoma
+                        The university of Oklahoma
                     </span>
+                    
                 </div>
                 <div id="socials">
-                    <a href="https://www.google.mail.com" target="_blank">
+                    <a href="https://www.mail.google.com" target="_blank">
                         <img src="static/email.png" style="width:30px;" />
                     </a>
                     <a href="https://www.linkedin.com" target="_blank">
                         <img src="static/linkedin.png" style="width:30px;" />
                     </a>
-                    <a href="https://www.instagram.com" target="_blank">
-                        <img src="static/instagram.png"style="width:30px;"/>
-                    </a>
                     <a href="https://www.twitter.com" target="_blank">
-                        <img src="static/twitter.png" style="width:30px;"/>
+                        <img src="static/twitter.png" style="width:30px;" />
                     </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="static/instagram.png" style="width:30px;" />
+                    </a>
+                    
                 </div>
             </div>
             <div id="Rdiv">
                 <div id="upDiv">
-                    <span class="Bold">
+                    <span class="Title">
                         Biography
                     </span>
                     <br />
                     <br />
-                    <span>
-                        I am a Senior student in Management Information Systems at The University of Oklahoma. I am on the 2022/2023 job market.
-                        <br />
-                        <br />
-                        My study focuses on data analytics and I am good at programming (Console, Desktop and Web Applications) and databases management.
-                        <br />
-                        <br />
-                        For more information, please refer to my 
-                        <a href="static/CV.pdf" target="_blank">
-                            CV.
-                        </a>
-                        <br />
-                        <br />
-                    </span>
+                    I am a Senior student in Management Information Systems at The University of Oklahoma. I am on the 2022/2023 job market.
+                    <br />
+                    <br />
+                    My study focuses on data analytics and I am good at programming (Console, Desktop and Web Applications) and databases management.
+                    <br />
+                    <br />
+                    For more information, please refer to my
+                    <a href="static/CV.pdf" target="_blank">
+                        CV.
+                    </a>
+                    <br />
+                    <br />
+
                 </div>
-                <div id="downDiv">
-                    <div id="interests">
-                        <span class="Bold">
+                <div id="bDiv">
+                    <div>
+                        <span class="Title">
                             Interests
                         </span>
                         <ol>
@@ -135,18 +134,18 @@
                                 Business Analyst
                             </li>
                             <li>
-                                Business Analyst
+                                Database Administration
                             </li>
                             <li>
-                                Business Analyst
+                                Web Developer
                             </li>
                             <li>
                                 Data Scientists
                             </li>
                         </ol>
                     </div>
-                    <div id="education">
-                        <span class="Bold">
+                    <div>
+                        <span class="Title">
                             Education
                         </span>
                         <ul>
@@ -166,7 +165,7 @@
             </div>
         </div>
         <div id="recentNews">
-            <span class="Bold">
+            <span class="Title">
                 Recent News
             </span>
             <ul>
@@ -174,12 +173,13 @@
                     Learning C# Web Application Design
                 </li>
                 <li>
-                    Learning C# EF
+                    Learning C# WPF
                 </li>
             </ul>
+            <br />
         </div>
         <div id="footer">
-            Designed and Published by Xinglong Ju
+            Designed and Published by Xinglog Ju
         </div>
     </div>
 </body>
